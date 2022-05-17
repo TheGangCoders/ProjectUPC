@@ -1,0 +1,14 @@
+D:\tioLaloPRd\tiolalows\Aplicacion\bin\Release\netcoreapp3.1\Aplicacion.deps.json
+D:\tioLaloPRd\tiolalows\Aplicacion\bin\Release\netcoreapp3.1\Aplicacion.dll
+D:\tioLaloPRd\tiolalows\Aplicacion\bin\Release\netcoreapp3.1\Aplicacion.pdb
+D:\tioLaloPRd\tiolalows\Aplicacion\bin\Release\netcoreapp3.1\Dominio.dll
+D:\tioLaloPRd\tiolalows\Aplicacion\bin\Release\netcoreapp3.1\Persistencia.dll
+D:\tioLaloPRd\tiolalows\Aplicacion\bin\Release\netcoreapp3.1\Dominio.pdb
+D:\tioLaloPRd\tiolalows\Aplicacion\bin\Release\netcoreapp3.1\Persistencia.pdb
+D:\tioLaloPRd\tiolalows\Aplicacion\obj\Release\netcoreapp3.1\Aplicacion.csprojAssemblyReference.cache
+D:\tioLaloPRd\tiolalows\Aplicacion\obj\Release\netcoreapp3.1\Aplicacion.csproj.CoreCompileInputs.cache
+D:\tioLaloPRd\tiolalows\Aplicacion\obj\Release\netcoreapp3.1\Aplicacion.AssemblyInfoInputs.cache
+D:\tioLaloPRd\tiolalows\Aplicacion\obj\Release\netcoreapp3.1\Aplicacion.AssemblyInfo.cs
+D:\tioLaloPRd\tiolalows\Aplicacion\obj\Release\netcoreapp3.1\Aplicacion.csproj.CopyComplete
+D:\tioLaloPRd\tiolalows\Aplicacion\obj\Release\netcoreapp3.1\Aplicacion.dll
+D:\tioLaloPRd\tiolalows\Aplicacion\obj\Release\netcoreapp3.1\Aplicacion.pdb
