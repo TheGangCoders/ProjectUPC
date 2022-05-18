@@ -6,6 +6,16 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
+  messageSlack:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Notification Slack
+      uses: rtCamp/action-slack-notify@v2
+      env:
+        SLACK_CHANNEL: upccicd
+        SLACK_TITLE: COMMIT INGRESADO
+        SLACK_USERNAME: Alpha Coder
+        SLACK_MESSAGE: "Se ingresó un commit"
   build:
     name: Build
     runs-on: windows-latest
