@@ -15,6 +15,7 @@ jobs:
         SLACK_CHANNEL: upccicd
         SLACK_TITLE: COMMIT INGRESADO
         SLACK_USERNAME: Alpha Coder
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
         SLACK_MESSAGE: "Se ingresó un commit"
   build:
     name: Build
