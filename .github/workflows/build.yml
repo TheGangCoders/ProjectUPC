@@ -17,6 +17,14 @@ jobs:
         SLACK_USERNAME: Alpha Coder
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
         SLACK_MESSAGE: "Se ingresó un commit"
+        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+    - name: Slack notifier 2
+      uses: act10ns/slack@v1
+      with:
+        status: ${{ job.status }}
+        steps: ${{ toJson(steps) }}
+        chanel: '#upccicd'
+      if: always()
   build:
     name: Build
     runs-on: windows-latest
@@ -59,3 +67,4 @@ jobs:
            dotnet build --configuration Release
           dotnet-coverage collect 'dotnet test' -f xml -o 'coverage.xml'
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
+      
