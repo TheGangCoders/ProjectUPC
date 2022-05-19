@@ -11,6 +11,6 @@ namespace Aplicacion.DTO
         public string SerieGuia { get; set; }
         public string NroGuia { get; set; }
         public Guid MonedaId { get; set; }
-        public ICollection<DetalleIngresoDTO> DetalleMovimientoAlmacen { get; set; }
+        public ICollection<Detalleingresodto> DetalleMovimientoAlmacen { get; set; }
     }
 }

@@ -24,7 +24,8 @@ namespace Aplicacion.Movimientos
             public async Task<IngresoDTO> Handle(ListaIngreso request, CancellationToken cancellationToken)
             {
                 var dlista = await _context.DMovimientoAlmacen.Select(
-                    x => new DetalleIngresoDTO {
+                    x => new Detalleingresodto
+                    {
                         MovimientosAlmacenId = x.MovimientosAlmacenId,
                         MaterialId = x.MaterialId,
                         MaterialDes = x.Material.Descripcion,
