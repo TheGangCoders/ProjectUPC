@@ -12,21 +12,21 @@ namespace Aplicacion.Movimientos
 {
     public class ListaMovimientos
     {
-        public class ListaDeIngresos : IRequest<List<NewDetalleIngresoDTO>>{
+        public class ListaDeIngresos : IRequest<List<NewDetalleIngresoDto>>{
 
         }
-        public class Manager : IRequestHandler<ListaDeIngresos, List<NewDetalleIngresoDTO>>
+        public class Manager : IRequestHandler<ListaDeIngresos, List<NewDetalleIngresoDto>>
         {
             private readonly AplicacionAlmacenContext _context;
             public Manager(AplicacionAlmacenContext context){
                  _context = context;
             }
-            public async Task<List<NewDetalleIngresoDTO>> Handle(ListaDeIngresos request, CancellationToken cancellationToken)
+            public async Task<List<NewDetalleIngresoDto>> Handle(ListaDeIngresos request, CancellationToken cancellationToken)
             {
                 try
                 {
                     var lista = await _context.DMovimientoAlmacen.Select(
-                    x => new NewDetalleIngresoDTO
+                    x => new NewDetalleIngresoDto
                     {
                         MovimientosAlmacenId = x.MovimientosAlmacenId,
                         SerieGuia = x.MovimientosAlmacen.SerieGuia,

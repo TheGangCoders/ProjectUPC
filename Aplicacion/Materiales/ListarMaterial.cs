@@ -18,10 +18,8 @@ namespace Aplicacion.Materiales
         public class Manager : IRequestHandler<ListaMateriales, List<MateriaDto>>
         {
             private readonly AplicacionAlmacenContext _context;
-            private readonly IMapper _mapper;
-            public Manager(AplicacionAlmacenContext context, IMapper mapper){
+            public Manager(AplicacionAlmacenContext context){
                  _context = context;
-                 _mapper = mapper;
             }
             public async Task<List<MateriaDto>> Handle(ListaMateriales request, CancellationToken cancellationToken)
             {

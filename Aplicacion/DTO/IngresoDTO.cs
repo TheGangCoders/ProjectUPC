@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Aplicacion.DTO
 {
-    public class IngresoDTO
+    public class Ingresodto
     {
         public Guid MovimientosAlmacenId { get; set; }
         public Guid DocumentoCompraId { get; set; }

@@ -37,7 +37,7 @@ namespace Aplicacion.Seguridad
             {
                 var usuario = await _userManager.FindByEmailAsync(request.Email);
                 if(usuario ==null){
-                    throw new ManejadorExcepcion(HttpStatusCode.Unauthorized);
+                    throw new ManejadorException(HttpStatusCode.Unauthorized);
                 }
                 var resultado = await _signInManager.CheckPasswordSignInAsync(usuario, request.Password, false);
                 if(resultado.Succeeded){
@@ -49,7 +49,7 @@ namespace Aplicacion.Seguridad
                         Imagen = null
                     };
                 }
-                throw new ManejadorExcepcion(HttpStatusCode.Unauthorized);
+                throw new ManejadorException(HttpStatusCode.Unauthorized);
             }
         }
     }

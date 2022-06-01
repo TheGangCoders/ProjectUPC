@@ -11,19 +11,19 @@ namespace Aplicacion.Movimientos
 {
     public class ListaSalidas
     {
-        public class ListaSalidasView : IRequest<List<DetalleSalidaDTO>>{
+        public class ListaSalidasView : IRequest<List<Detallesalidadto>>{
 
         }
-        public class Manager : IRequestHandler<ListaSalidasView, List<DetalleSalidaDTO>>
+        public class Manager : IRequestHandler<ListaSalidasView, List<Detallesalidadto>>
         {
             private readonly AplicacionAlmacenContext _context;
             public Manager(AplicacionAlmacenContext context){
                  _context = context;
             }
-            public async Task<List<DetalleSalidaDTO>> Handle(ListaSalidasView request, CancellationToken cancellationToken)
+            public async Task<List<Detallesalidadto>> Handle(ListaSalidasView request, CancellationToken cancellationToken)
             {
                 var lista = await _context.DMovimientoAlmacen.Select(
-                    x => new DetalleSalidaDTO
+                    x => new Detallesalidadto
                     {
                         MovimientosAlmacenId = x.MovimientosAlmacenId,
                         Descripcion = x.Material.Descripcion,

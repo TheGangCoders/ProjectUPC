@@ -12,16 +12,17 @@ namespace Aplicacion.Movimientos
 {
     public class ListaIngresosVista
     {
-        public class ListaIngreso : IRequest<IngresoDTO>{
+        public class ListaIngreso : IRequest<Ingresodto>
+        {
             public Guid Id { get; set; }
         }
-        public class Manager : IRequestHandler<ListaIngreso, IngresoDTO>
+        public class Manager : IRequestHandler<ListaIngreso, Ingresodto>
         {
             private readonly AplicacionAlmacenContext _context;
             public Manager(AplicacionAlmacenContext context){
                  _context = context;
             }
-            public async Task<IngresoDTO> Handle(ListaIngreso request, CancellationToken cancellationToken)
+            public async Task<Ingresodto> Handle(ListaIngreso request, CancellationToken cancellationToken)
             {
                 var dlista = await _context.DMovimientoAlmacen.Select(
                     x => new Detalleingresodto
@@ -32,13 +33,13 @@ namespace Aplicacion.Movimientos
                         Cantidad = x.Cantidad,
                         Precio = x.PrecioUnitario,
                         Activo = 1,
-                        Lote = x.Lote == null? null : x.Lote,
-                        FechaVencimiento = x.FechaVencimiento == null? (DateTime?)null : x.FechaVencimiento
+                        Lote = x.Lote ?? "",
+                        FechaVencimiento = x.FechaVencimiento == null ? (DateTime?)null : x.FechaVencimiento
                     }
                 ).Where(x => x.MovimientosAlmacenId == request.Id).ToListAsync();
 
                 var lista = await _context.MovimientosAlmacen.Select(
-                    x => new IngresoDTO {
+                    x => new Ingresodto {
                         MovimientosAlmacenId = x.MovimientosAlmacenId,
                         DocumentoCompraId = x.DocumentoCompraId,
                         ProveedorId = x.ProveedorId,

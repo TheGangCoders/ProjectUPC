@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Aplicacion.DTO
 {
-    public class DetalleSalidaDTO
+    public class Detallesalidadto
     {
         public Guid MovimientosAlmacenId { get; set; }
         public string Descripcion { get; set; }

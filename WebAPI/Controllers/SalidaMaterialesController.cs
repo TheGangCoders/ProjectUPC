@@ -15,7 +15,7 @@ namespace WebAPI.Controllers
             return await Mediator.Send(data);
         }
         [HttpGet("ListaSalidas")]
-        public async Task<ActionResult<List<DetalleSalidaDTO>>> Lista(){
+        public async Task<ActionResult<List<Detallesalidadto>>> Lista(){
             return await Mediator.Send( new ListaSalidas.ListaSalidasView());            
         }
     }

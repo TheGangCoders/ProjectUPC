@@ -7,7 +7,7 @@ namespace Seguridad
 {
     public class UsuarioSesion : IUsuarioSesion
     {
-        IHttpContextAccessor _httpContextAccessor;
+        readonly IHttpContextAccessor _httpContextAccessor;
         public UsuarioSesion(IHttpContextAccessor httpContextAccessor){
             _httpContextAccessor = httpContextAccessor;
         }

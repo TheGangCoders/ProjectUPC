@@ -17,12 +17,12 @@ namespace WebAPI.Controllers
             return await Mediator.Send(data);
         }
         [HttpGet("ListaIngresos")]
-        public async Task<ActionResult<List<NewDetalleIngresoDTO>>> Lista(){
+        public async Task<ActionResult<List<NewDetalleIngresoDto>>> Lista(){
             return await Mediator.Send( new ListaMovimientos.ListaDeIngresos());            
         }
         [Authorize]
         [HttpGet("IngresoById/{id}", Name= "IngresoById")]
-        public async Task<ActionResult<IngresoDTO>> Unique(Guid id){
+        public async Task<ActionResult<Ingresodto>> Unique(Guid id){
             return await Mediator.Send(new ListaIngresosVista.ListaIngreso{Id = id});
         }
     }
