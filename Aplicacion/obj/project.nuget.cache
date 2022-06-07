@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f8deijITdHCICpITf9lbCXRBd/r7Z6R4tFFLpMZ+6nuNxFO/8Sx3ZKpzyRBF/UtqvIPUpwJlkcitn18IGkTjrg==",
+  "dgSpecHash": "VpSj1Af2ZNmyQ4+hBc6iWNAh3RIul2wp4URzVNXnam2bA3ei2MABljURqQHSSlOtL2XsCzbLhVFG3jboH2gjKQ==",
   "success": true,
-  "projectFilePath": "D:\\tioLaloPRd\\tiolalows\\Aplicacion\\Aplicacion.csproj",
+  "projectFilePath": "D:\\upcproject\\github\\ProjectUPC\\Aplicacion\\Aplicacion.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gabo9\\.nuget\\packages\\automapper\\8.1.1\\automapper.8.1.1.nupkg.sha512",
     "C:\\Users\\gabo9\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\6.1.1\\automapper.extensions.microsoft.dependencyinjection.6.1.1.nupkg.sha512",

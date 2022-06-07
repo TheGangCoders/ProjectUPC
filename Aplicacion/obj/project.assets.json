@@ -5463,11 +5463,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\tioLaloPRd\\tiolalows\\Aplicacion\\Aplicacion.csproj",
+      "projectUniqueName": "D:\\upcproject\\github\\ProjectUPC\\Aplicacion\\Aplicacion.csproj",
       "projectName": "Aplicacion",
-      "projectPath": "D:\\tioLaloPRd\\tiolalows\\Aplicacion\\Aplicacion.csproj",
+      "projectPath": "D:\\upcproject\\github\\ProjectUPC\\Aplicacion\\Aplicacion.csproj",
       "packagesPath": "C:\\Users\\gabo9\\.nuget\\packages\\",
-      "outputPath": "D:\\tioLaloPRd\\tiolalows\\Aplicacion\\obj\\",
+      "outputPath": "D:\\upcproject\\github\\ProjectUPC\\Aplicacion\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gabo9\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5483,11 +5483,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\tioLaloPRd\\tiolalows\\Dominio\\Dominio.csproj": {
-              "projectPath": "D:\\tioLaloPRd\\tiolalows\\Dominio\\Dominio.csproj"
+            "D:\\upcproject\\github\\ProjectUPC\\Dominio\\Dominio.csproj": {
+              "projectPath": "D:\\upcproject\\github\\ProjectUPC\\Dominio\\Dominio.csproj"
             },
-            "D:\\tioLaloPRd\\tiolalows\\PErsistencia\\Persistencia.csproj": {
-              "projectPath": "D:\\tioLaloPRd\\tiolalows\\PErsistencia\\Persistencia.csproj"
+            "D:\\upcproject\\github\\ProjectUPC\\PErsistencia\\Persistencia.csproj": {
+              "projectPath": "D:\\upcproject\\github\\ProjectUPC\\PErsistencia\\Persistencia.csproj"
             }
           }
         }

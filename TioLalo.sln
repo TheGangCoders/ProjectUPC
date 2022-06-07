@@ -1,17 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.84
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "Dominio\Dominio.csproj", "{DFC8D528-E196-4AD0-BBB3-7DF5E900F520}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dominio", "Dominio\Dominio.csproj", "{DFC8D528-E196-4AD0-BBB3-7DF5E900F520}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aplicacion", "Aplicacion\Aplicacion.csproj", "{ECC4C12F-6082-4451-BFAA-7C8CB313BD3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aplicacion", "Aplicacion\Aplicacion.csproj", "{ECC4C12F-6082-4451-BFAA-7C8CB313BD3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistencia", "Persistencia\Persistencia.csproj", "{C44DDD87-4023-4475-AC44-BDFCCB674A8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistencia", "Persistencia\Persistencia.csproj", "{C44DDD87-4023-4475-AC44-BDFCCB674A8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{9304BA21-2DEF-4825-B9DA-D8FD6F4E5DF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "WebAPI\WebAPI.csproj", "{9304BA21-2DEF-4825-B9DA-D8FD6F4E5DF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seguridad", "Seguridad\Seguridad.csproj", "{CE1EA20D-9098-44CF-A1E0-A88CF643A02E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Seguridad", "Seguridad\Seguridad.csproj", "{CE1EA20D-9098-44CF-A1E0-A88CF643A02E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{DFC8D528-E196-4AD0-BBB3-7DF5E900F520}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -86,5 +83,11 @@ Global
 		{CE1EA20D-9098-44CF-A1E0-A88CF643A02E}.Release|x64.Build.0 = Release|Any CPU
 		{CE1EA20D-9098-44CF-A1E0-A88CF643A02E}.Release|x86.ActiveCfg = Release|Any CPU
 		{CE1EA20D-9098-44CF-A1E0-A88CF643A02E}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {48F3796F-83F6-4473-A2B8-7DBAEB697FF8}
 	EndGlobalSection
 EndGlobal

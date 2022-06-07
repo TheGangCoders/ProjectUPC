@@ -41,13 +41,13 @@ namespace WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<AplicacionAlmacenContext>(opt => {
-                opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),
+                opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection2"),
                     sqlServerOptions => sqlServerOptions.CommandTimeout(360));
             });
             services.AddMediatR(typeof(Consulta.Manejador).Assembly);
             services.AddControllers().AddNewtonsoftJson(options =>
             options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
-            );;
+            );
             services.AddCors(options =>  
             {  
                 options.AddDefaultPolicy(
@@ -81,8 +81,6 @@ namespace WebAPI
             {
                 app.UseDeveloperExceptionPage();
             }
-
-            // app.UseHttpsRedirection();
             app.UseAuthentication(); // El importante para poder sacar lo que existe en el jwt
             app.UseRouting();
             app.UseCors(options=>options.WithOrigins("http://tiolaloangularui.s3-website.us-east-2.amazonaws.com", "http://localhost:4200").AllowAnyMethod().AllowAnyHeader());

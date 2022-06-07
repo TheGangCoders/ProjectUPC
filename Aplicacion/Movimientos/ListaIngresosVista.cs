@@ -34,7 +34,7 @@ namespace Aplicacion.Movimientos
                         Precio = x.PrecioUnitario,
                         Activo = 1,
                         Lote = x.Lote ?? "",
-                        FechaVencimiento = x.FechaVencimiento == null ? (DateTime?)null : x.FechaVencimiento
+                        FechaVencimiento = (DateTime?)x.FechaVencimiento ?? (DateTime?)null
                     }
                 ).Where(x => x.MovimientosAlmacenId == request.Id).ToListAsync();
 

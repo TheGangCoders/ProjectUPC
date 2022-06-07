@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8INYp8D6GQI/cwLZOAzOnA+FHw/rAtBAyDmS/KZgyEIOCJkfAPK/jz6M+263bBXiaqAKuwuBAF0rKRp9xaRwNw==",
+  "dgSpecHash": "3MUFTudOZphFmNOQ2AeEGITV+X6Y2k/Z2VhzFfqX5LPG5SbUXAKkz2IAln6TlxZalwcP6cZdRDeut3ccvwnYbA==",
   "success": true,
-  "projectFilePath": "D:\\tioLaloPRd\\tiolalows\\Dominio\\Dominio.csproj",
+  "projectFilePath": "D:\\upcproject\\github\\ProjectUPC\\Dominio\\Dominio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gabo9\\.nuget\\packages\\awssdk.core\\3.5.3.6\\awssdk.core.3.5.3.6.nupkg.sha512",
     "C:\\Users\\gabo9\\.nuget\\packages\\awssdk.elasticbeanstalk\\3.5.2.34\\awssdk.elasticbeanstalk.3.5.2.34.nupkg.sha512",

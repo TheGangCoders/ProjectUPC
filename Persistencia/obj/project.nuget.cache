@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8hfmcaDQXe7KP40QekE3kPrFzcanGCCocImEH9fe2yZf5jZ5W6B2VrV2U9BOKycsRmwZqnYjyB2cfPkVyxV2XQ==",
+  "dgSpecHash": "6PKVTk866htWl1Vsu6MPzVdEcwq7bthlelb2q6l/VzQaBw1Zr+h4wxRISL16+PhdqzBUbmFgfcXBVKCenjDxUA==",
   "success": true,
-  "projectFilePath": "D:\\tioLaloPRd\\tiolalows\\Persistencia\\Persistencia.csproj",
+  "projectFilePath": "D:\\upcproject\\github\\ProjectUPC\\Persistencia\\Persistencia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gabo9\\.nuget\\packages\\awssdk.core\\3.5.3.6\\awssdk.core.3.5.3.6.nupkg.sha512",
     "C:\\Users\\gabo9\\.nuget\\packages\\awssdk.elasticbeanstalk\\3.5.2.34\\awssdk.elasticbeanstalk.3.5.2.34.nupkg.sha512",

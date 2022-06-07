@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Aplicacion.Contratos;
+using Aplicacion.ManejadorError;
 using Dominio;
 using FluentValidation;
 using MediatR;
@@ -121,17 +122,24 @@ namespace Aplicacion.Movimientos
 
                 if (correlativo != null)
                 {
-                    correlativo.Numero = correlativo.Numero + 1;
-                    correlativo.FechaModificacion = DateTime.Now;
-                    correlativo.UsuarioModificacion = usuario.UserName.ToUpper();
-                    _context.CorrelativoMovimientos.Update(correlativo);
+                    try
+                    {
+                        correlativo.Numero = correlativo.Numero + 1;
+                        correlativo.FechaModificacion = DateTime.Now;
+                        correlativo.UsuarioModificacion = usuario.UserName.ToUpper();
+                        _context.CorrelativoMovimientos.Update(correlativo);
+                    }
+                    catch (Exception)
+                    {
+                        throw new InstanceNotFoundException("No se pudo encontrar Correlativo");
+                    }
+                    
                 }
-
                 var valor = await _context.SaveChangesAsync();
                 if(valor > 0){
                     return 1;
                 }
-                throw new Exception("No se pudo ingresar materiales");
+                throw new InstanceNotFoundException("No se pudo insertar el Grupo de Material");
             }
         }
     }

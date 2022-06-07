@@ -5935,11 +5935,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\tioLaloPRd\\tiolalows\\WebAPI\\WebAPI.csproj",
+      "projectUniqueName": "D:\\upcproject\\github\\ProjectUPC\\WebAPI\\WebAPI.csproj",
       "projectName": "WebAPI",
-      "projectPath": "D:\\tioLaloPRd\\tiolalows\\WebAPI\\WebAPI.csproj",
+      "projectPath": "D:\\upcproject\\github\\ProjectUPC\\WebAPI\\WebAPI.csproj",
       "packagesPath": "C:\\Users\\gabo9\\.nuget\\packages\\",
-      "outputPath": "D:\\tioLaloPRd\\tiolalows\\WebAPI\\obj\\",
+      "outputPath": "D:\\upcproject\\github\\ProjectUPC\\WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gabo9\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5955,11 +5955,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\tioLaloPRd\\tiolalows\\Aplicacion\\Aplicacion.csproj": {
-              "projectPath": "D:\\tioLaloPRd\\tiolalows\\Aplicacion\\Aplicacion.csproj"
+            "D:\\upcproject\\github\\ProjectUPC\\Aplicacion\\Aplicacion.csproj": {
+              "projectPath": "D:\\upcproject\\github\\ProjectUPC\\Aplicacion\\Aplicacion.csproj"
             },
-            "D:\\tioLaloPRd\\tiolalows\\Seguridad\\Seguridad.csproj": {
-              "projectPath": "D:\\tioLaloPRd\\tiolalows\\Seguridad\\Seguridad.csproj"
+            "D:\\upcproject\\github\\ProjectUPC\\Seguridad\\Seguridad.csproj": {
+              "projectPath": "D:\\upcproject\\github\\ProjectUPC\\Seguridad\\Seguridad.csproj"
             }
           }
         }

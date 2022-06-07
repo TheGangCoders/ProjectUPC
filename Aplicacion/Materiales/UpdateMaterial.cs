@@ -1,4 +1,5 @@
 ﻿using Aplicacion.Contratos;
+using Aplicacion.ManejadorError;
 using Dominio;
 using FluentValidation;
 using MediatR;
@@ -74,7 +75,7 @@ namespace Aplicacion.Materiales
                     {
                         return 1;
                     }
-                    throw new Exception("No se pudo ingresar materiales");
+                    throw new InstanceNotFoundException("No se pudo ingresar materiales");
                 }
                 else
                 {

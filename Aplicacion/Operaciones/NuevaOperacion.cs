@@ -2,6 +2,7 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 using Aplicacion.Contratos;
+using Aplicacion.ManejadorError;
 using Dominio;
 using FluentValidation;
 using MediatR;
@@ -32,21 +33,33 @@ namespace Aplicacion.Operaciones
             }
             public async Task<int> Handle(Execute request, CancellationToken cancellationToken)
             {
-                var usuario = await _userManager.FindByNameAsync(_usuarioSesion.ObtenerUsuarioSesion());
-                Guid _OperacionId = Guid.NewGuid();
-                var operacion = new OperacionesAlmacen{
-                    OperacionesAlmacenId = _OperacionId,
-                    Descripcion = request.Descripcion.ToUpper(),
-                    Activo = true,
-                    FechaCreacion = DateTime.Now,
-                    UsuarioCreacion = usuario.UserName.ToUpper()
-                };
-                _context.OperacionesAlmacen.Add(operacion);
-                var valor = await _context.SaveChangesAsync();
-                if(valor > 0){
-                    return 1;
+                try
+                {
+                    var usuario = await _userManager.FindByNameAsync(_usuarioSesion.ObtenerUsuarioSesion());
+                    Guid _OperacionId = Guid.NewGuid();
+                    var operacion = new OperacionesAlmacen
+                    {
+                        OperacionesAlmacenId = _OperacionId,
+                        Descripcion = request.Descripcion.ToUpper(),
+                        Activo = true,
+                        FechaCreacion = DateTime.Now,
+                        UsuarioCreacion = usuario.UserName.ToUpper()
+                    };
+                    _context.OperacionesAlmacen.Add(operacion);
+                    var valor = await _context.SaveChangesAsync();
+                    if (valor > 0)
+                    {
+                        return 1;
+                    }
+                    else
+                    {
+                        return 0;
+                    }
                 }
-                throw new Exception("No se pudo insertar la operación");
+                catch (Exception e)
+                {
+                    throw new InstanceNotFoundException(e.ToString());
+                }                
             }
         }
     }

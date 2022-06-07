@@ -2,6 +2,7 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 using Aplicacion.Contratos;
+using Aplicacion.ManejadorError;
 using Dominio;
 using FluentValidation;
 using MediatR;
@@ -67,7 +68,7 @@ namespace Aplicacion.Materiales
                 if(valor > 0){
                     return 1;
                 }
-                throw new Exception("No se pudo insertar el Material");
+                throw new InstanceNotFoundException("No se pudo insertar el Material");
             }
         }
     }

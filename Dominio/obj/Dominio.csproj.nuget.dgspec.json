@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\tioLaloPRd\\tiolalows\\Dominio\\Dominio.csproj": {}
+    "D:\\upcproject\\github\\ProjectUPC\\Dominio\\Dominio.csproj": {}
   },
   "projects": {
-    "D:\\tioLaloPRd\\tiolalows\\Dominio\\Dominio.csproj": {
+    "D:\\upcproject\\github\\ProjectUPC\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\tioLaloPRd\\tiolalows\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "D:\\upcproject\\github\\ProjectUPC\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "D:\\tioLaloPRd\\tiolalows\\Dominio\\Dominio.csproj",
+        "projectPath": "D:\\upcproject\\github\\ProjectUPC\\Dominio\\Dominio.csproj",
         "packagesPath": "C:\\Users\\gabo9\\.nuget\\packages\\",
-        "outputPath": "D:\\tioLaloPRd\\tiolalows\\Dominio\\obj\\",
+        "outputPath": "D:\\upcproject\\github\\ProjectUPC\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gabo9\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -26,3 +26,17 @@ D:\tioLaloPRd\tiolalows\Aplicacion\obj\Debug\netcoreapp3.1\Aplicacion.csproj.Cop
 D:\tioLaloPRd\tiolalows\Aplicacion\obj\Debug\netcoreapp3.1\Aplicacion.dll
 D:\tioLaloPRd\tiolalows\Aplicacion\obj\Debug\netcoreapp3.1\Aplicacion.pdb
 D:\tioLaloPRd\tiolalows\Aplicacion\obj\Debug\netcoreapp3.1\Aplicacion.csproj.CoreCompileInputs.cache
+D:\upcproject\github\ProjectUPC\Aplicacion\bin\Debug\netcoreapp3.1\Aplicacion.deps.json
+D:\upcproject\github\ProjectUPC\Aplicacion\bin\Debug\netcoreapp3.1\Aplicacion.dll
+D:\upcproject\github\ProjectUPC\Aplicacion\bin\Debug\netcoreapp3.1\Aplicacion.pdb
+D:\upcproject\github\ProjectUPC\Aplicacion\bin\Debug\netcoreapp3.1\Dominio.dll
+D:\upcproject\github\ProjectUPC\Aplicacion\bin\Debug\netcoreapp3.1\Persistencia.dll
+D:\upcproject\github\ProjectUPC\Aplicacion\bin\Debug\netcoreapp3.1\Dominio.pdb
+D:\upcproject\github\ProjectUPC\Aplicacion\bin\Debug\netcoreapp3.1\Persistencia.pdb
+D:\upcproject\github\ProjectUPC\Aplicacion\obj\Debug\netcoreapp3.1\Aplicacion.csprojAssemblyReference.cache
+D:\upcproject\github\ProjectUPC\Aplicacion\obj\Debug\netcoreapp3.1\Aplicacion.csproj.CoreCompileInputs.cache
+D:\upcproject\github\ProjectUPC\Aplicacion\obj\Debug\netcoreapp3.1\Aplicacion.AssemblyInfoInputs.cache
+D:\upcproject\github\ProjectUPC\Aplicacion\obj\Debug\netcoreapp3.1\Aplicacion.AssemblyInfo.cs
+D:\upcproject\github\ProjectUPC\Aplicacion\obj\Debug\netcoreapp3.1\Aplicacion.csproj.CopyComplete
+D:\upcproject\github\ProjectUPC\Aplicacion\obj\Debug\netcoreapp3.1\Aplicacion.dll
+D:\upcproject\github\ProjectUPC\Aplicacion\obj\Debug\netcoreapp3.1\Aplicacion.pdb
