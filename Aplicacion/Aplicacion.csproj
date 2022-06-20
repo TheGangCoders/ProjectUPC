@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
     <ProjectReference Include="..\Dominio\Dominio.csproj" />
-    <ProjectReference Include="..\PErsistencia\Persistencia.csproj" />
+    <ProjectReference Include="..\Persistencia\Persistencia.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="AWSSDK.ElasticBeanstalk" Version="3.5.2.34" />
