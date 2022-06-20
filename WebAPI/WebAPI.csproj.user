@@ -5,6 +5,6 @@
   </PropertyGroup>
   <PropertyGroup>
     <ActiveDebugProfile>WebAPI</ActiveDebugProfile>
-    <NameOfLastUsedPublishProfile>D:\upcproject\github\ProjectUPC\WebAPI\Properties\PublishProfiles\FolderProfile.pubxml</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>D:\upcproject\github\ProjectUPC\WebAPI\Properties\PublishProfiles\upcwebapi - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>
