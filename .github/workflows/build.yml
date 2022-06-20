@@ -18,7 +18,7 @@ jobs:
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
         SLACK_MESSAGE: "Se ingresó un commit"
         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-        AZURE_WEBAPP_NAME: tiolalo
+        AZURE_WEBAPP_NAME: DotNetWeb
         AZURE_WEBAPP_PACKAGE_PATH: '.' # Set this to the path to your web app project, defaults to the repository root:
         DOTNET_VERSION: '3.1.x' # The .NET SDK version to use
   build:
@@ -81,14 +81,14 @@ jobs:
     - name: Build
       run: |
         dotnet build --configuration Release
-        dotnet publish -c Release -o '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/myapp' -r linux-x64 --self-contained true /p:UseAppHost=true
+        dotnet publish -c Release -o ../dotnet-webapp -r linux-x64 --self-contained true /p:UseAppHost=true
       
     - uses: azure/webapps-deploy@v2
       name: Deploy
       with:
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
         publish-profile: ${{ secrets.AZURE_PUBLISH_PROFILE }}
-        package: '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/myapp'
+        package: '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/dotnet-webapp'
     - name: Slack notifier 2
       uses: act10ns/slack@v1
       env:
