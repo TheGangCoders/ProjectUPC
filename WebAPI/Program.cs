@@ -18,21 +18,8 @@ namespace WebAPI
     {
         public static void Main(string[] args)
         {
-           var hostserver = CreateHostBuilder(args).Build();
-           using (var ambiente = hostserver.Services.CreateScope()){
-               var services = ambiente.ServiceProvider;
-               try{
-                   var userManager = services.GetRequiredService<UserManager<Usuario>>();
-                   var context = services.GetRequiredService<AplicacionAlmacenContext>();
-                    context.Database.Migrate();
-                    DataPrueba.InsertarData(context, userManager).Wait();
-               }catch(Exception e){
-                   var logging = services.GetRequiredService<ILogger<Program>>();
-                   logging.LogError(e, "Ocurrio un error en la migracion");
-               }
-               
-           }
-           hostserver.Run();
+            var hostserver = CreateHostBuilder(args).Build();
+            hostserver.Run();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
