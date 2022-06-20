@@ -19,7 +19,7 @@ jobs:
         SLACK_MESSAGE: "Se ingresó un commit"
         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         AZURE_WEBAPP_NAME: tiolalo
-        AZURE_WEBAPP_PACKAGE_PATH: '.' # Set this to the path to your web app project, defaults to the repository root:
+        AZURE_WEBAPP_PACKAGE_PATH: 'TioLalo.sln' # Set this to the path to your web app project, defaults to the repository root:
         DOTNET_VERSION: '3.1.x' # The .NET SDK version to use
   build:
     name: Build
