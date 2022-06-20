@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Persistencia.Migrations
 {
-    public partial class identityCoreInicial : Migration
+    public partial class PrimeraMigracion : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -341,6 +341,7 @@ namespace Persistencia.Migrations
                 {
                     MaterialId = table.Column<Guid>(nullable: false),
                     Descripcion = table.Column<string>(nullable: true),
+                    CodProveedor = table.Column<string>(nullable: true),
                     GrupoMaterialesId = table.Column<Guid>(nullable: false),
                     UnidadMedidaId = table.Column<Guid>(nullable: false),
                     Activo = table.Column<bool>(nullable: false),
@@ -379,10 +380,13 @@ namespace Persistencia.Migrations
                     Subtotal = table.Column<decimal>(type: "decimal(18,4)", nullable: false),
                     Igv = table.Column<decimal>(type: "decimal(18,4)", nullable: false),
                     Activo = table.Column<bool>(nullable: false),
+                    FechaVencimiento = table.Column<DateTime>(nullable: false),
+                    Lote = table.Column<string>(nullable: true),
                     FechaCreacion = table.Column<DateTime>(nullable: false),
                     UsuarioCreacion = table.Column<string>(nullable: true),
                     FechaModificacion = table.Column<DateTime>(nullable: false),
-                    UsuarioModificacion = table.Column<string>(nullable: true)
+                    UsuarioModificacion = table.Column<string>(nullable: true),
+                    Observacion = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -508,13 +512,13 @@ namespace Persistencia.Migrations
                 name: "IX_Material_GrupoMaterialesId",
                 table: "Material",
                 column: "GrupoMaterialesId",
-                unique: false);
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_Material_UnidadMedidaId",
                 table: "Material",
                 column: "UnidadMedidaId",
-                unique: false);
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_MaterialStock_MaterialId",

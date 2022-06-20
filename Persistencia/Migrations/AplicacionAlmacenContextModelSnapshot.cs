@@ -75,14 +75,23 @@ namespace Persistencia.Migrations
                     b.Property<DateTime>("FechaModificacion")
                         .HasColumnType("datetime2");
 
+                    b.Property<DateTime>("FechaVencimiento")
+                        .HasColumnType("datetime2");
+
                     b.Property<decimal>("Igv")
                         .HasColumnType("decimal(18,4)");
+
+                    b.Property<string>("Lote")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<Guid>("MaterialId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("MovimientosAlmacenId")
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Observacion")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("PrecioUnitario")
                         .HasColumnType("decimal(18,4)");
@@ -174,6 +183,9 @@ namespace Persistencia.Migrations
 
                     b.Property<bool>("Activo")
                         .HasColumnType("bit");
+
+                    b.Property<string>("CodProveedor")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Descripcion")
                         .HasColumnType("nvarchar(max)");

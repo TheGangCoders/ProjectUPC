@@ -1,0 +1,12 @@
+D:\upcproject\github\ProjectUPC\DataAdm\bin\Debug\netcoreapp3.1\DataAdm.deps.json
+D:\upcproject\github\ProjectUPC\DataAdm\bin\Debug\netcoreapp3.1\DataAdm.dll
+D:\upcproject\github\ProjectUPC\DataAdm\bin\Debug\netcoreapp3.1\DataAdm.pdb
+D:\upcproject\github\ProjectUPC\DataAdm\obj\Debug\netcoreapp3.1\DataAdm.csproj.CoreCompileInputs.cache
+D:\upcproject\github\ProjectUPC\DataAdm\obj\Debug\netcoreapp3.1\DataAdm.AssemblyInfoInputs.cache
+D:\upcproject\github\ProjectUPC\DataAdm\obj\Debug\netcoreapp3.1\DataAdm.AssemblyInfo.cs
+D:\upcproject\github\ProjectUPC\DataAdm\obj\Debug\netcoreapp3.1\DataAdm.dll
+D:\upcproject\github\ProjectUPC\DataAdm\obj\Debug\netcoreapp3.1\DataAdm.pdb
+D:\upcproject\github\ProjectUPC\DataAdm\bin\Debug\netcoreapp3.1\DataAdm.runtimeconfig.json
+D:\upcproject\github\ProjectUPC\DataAdm\bin\Debug\netcoreapp3.1\DataAdm.runtimeconfig.dev.json
+D:\upcproject\github\ProjectUPC\DataAdm\obj\Debug\netcoreapp3.1\DataAdm.csprojAssemblyReference.cache
+D:\upcproject\github\ProjectUPC\DataAdm\obj\Debug\netcoreapp3.1\DataAdm.genruntimeconfig.cache

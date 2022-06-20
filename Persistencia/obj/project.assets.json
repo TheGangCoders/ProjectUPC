@@ -5239,7 +5239,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gabo9\\.nuget\\packages\\": {}
+    "C:\\Users\\usuario\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -5247,11 +5248,15 @@
       "projectUniqueName": "D:\\upcproject\\github\\ProjectUPC\\Persistencia\\Persistencia.csproj",
       "projectName": "Persistencia",
       "projectPath": "D:\\upcproject\\github\\ProjectUPC\\Persistencia\\Persistencia.csproj",
-      "packagesPath": "C:\\Users\\gabo9\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
       "outputPath": "D:\\upcproject\\github\\ProjectUPC\\Persistencia\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\gabo9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5263,6 +5268,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
             "D:\\upcproject\\github\\ProjectUPC\\Dominio\\Dominio.csproj": {
               "projectPath": "D:\\upcproject\\github\\ProjectUPC\\Dominio\\Dominio.csproj"
@@ -5278,6 +5284,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "AWSSDK.ElasticBeanstalk": {
             "target": "Package",
@@ -5314,7 +5321,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

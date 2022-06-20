@@ -51,7 +51,7 @@ namespace WebAPI
             services.AddCors(options =>  
             {  
                 options.AddDefaultPolicy(
-                    builder => builder.WithOrigins("http://tiolaloangularui.s3-website.us-east-2.amazonaws.com", "http://localhost:4200")
+                    builder => builder.WithOrigins("https://brave-tree-02872af10.1.azurestaticapps.net", "http://localhost:4200")
                 );  
             });
             var builder = services.AddIdentityCore<Usuario>();
@@ -83,7 +83,7 @@ namespace WebAPI
             }
             app.UseAuthentication(); // El importante para poder sacar lo que existe en el jwt
             app.UseRouting();
-            app.UseCors(options=>options.WithOrigins("http://tiolaloangularui.s3-website.us-east-2.amazonaws.com", "http://localhost:4200").AllowAnyMethod().AllowAnyHeader());
+            app.UseCors(options=>options.WithOrigins("https://brave-tree-02872af10.1.azurestaticapps.net", "http://localhost:4200").AllowAnyMethod().AllowAnyHeader());
 
             app.UseAuthorization();
 

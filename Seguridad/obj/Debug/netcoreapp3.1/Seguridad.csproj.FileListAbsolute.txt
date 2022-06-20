@@ -39,10 +39,11 @@ D:\upcproject\github\ProjectUPC\Seguridad\bin\Debug\netcoreapp3.1\Persistencia.d
 D:\upcproject\github\ProjectUPC\Seguridad\bin\Debug\netcoreapp3.1\Aplicacion.pdb
 D:\upcproject\github\ProjectUPC\Seguridad\bin\Debug\netcoreapp3.1\Dominio.pdb
 D:\upcproject\github\ProjectUPC\Seguridad\bin\Debug\netcoreapp3.1\Persistencia.pdb
-D:\upcproject\github\ProjectUPC\Seguridad\obj\Debug\netcoreapp3.1\Seguridad.csprojAssemblyReference.cache
 D:\upcproject\github\ProjectUPC\Seguridad\obj\Debug\netcoreapp3.1\Seguridad.csproj.CoreCompileInputs.cache
 D:\upcproject\github\ProjectUPC\Seguridad\obj\Debug\netcoreapp3.1\Seguridad.AssemblyInfoInputs.cache
 D:\upcproject\github\ProjectUPC\Seguridad\obj\Debug\netcoreapp3.1\Seguridad.AssemblyInfo.cs
 D:\upcproject\github\ProjectUPC\Seguridad\obj\Debug\netcoreapp3.1\Seguridad.csproj.CopyComplete
 D:\upcproject\github\ProjectUPC\Seguridad\obj\Debug\netcoreapp3.1\Seguridad.dll
 D:\upcproject\github\ProjectUPC\Seguridad\obj\Debug\netcoreapp3.1\Seguridad.pdb
+D:\upcproject\github\ProjectUPC\Seguridad\obj\Debug\netcoreapp3.1\Seguridad.csproj.AssemblyReference.cache
+D:\upcproject\github\ProjectUPC\Seguridad\obj\Debug\netcoreapp3.1\Seguridad.GeneratedMSBuildEditorConfig.editorconfig

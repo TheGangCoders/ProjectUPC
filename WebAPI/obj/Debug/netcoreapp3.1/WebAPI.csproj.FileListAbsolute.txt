@@ -172,7 +172,6 @@ D:\tioLaloPRd\tiolalows\WebAPI\bin\Debug\netcoreapp3.1\AWSSDK.ElasticBeanstalk.d
 D:\upcproject\github\ProjectUPC\WebAPI\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\upcproject\github\ProjectUPC\WebAPI\bin\Debug\netcoreapp3.1\appsettings.json
 D:\upcproject\github\ProjectUPC\WebAPI\bin\Debug\netcoreapp3.1\aws-beanstalk-tools-defaults.json
-D:\upcproject\github\ProjectUPC\WebAPI\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 D:\upcproject\github\ProjectUPC\WebAPI\bin\Debug\netcoreapp3.1\WebAPI.exe
 D:\upcproject\github\ProjectUPC\WebAPI\bin\Debug\netcoreapp3.1\WebAPI.deps.json
 D:\upcproject\github\ProjectUPC\WebAPI\bin\Debug\netcoreapp3.1\WebAPI.runtimeconfig.json
@@ -243,7 +242,6 @@ D:\upcproject\github\ProjectUPC\WebAPI\bin\Debug\netcoreapp3.1\Aplicacion.pdb
 D:\upcproject\github\ProjectUPC\WebAPI\bin\Debug\netcoreapp3.1\Seguridad.pdb
 D:\upcproject\github\ProjectUPC\WebAPI\bin\Debug\netcoreapp3.1\Dominio.pdb
 D:\upcproject\github\ProjectUPC\WebAPI\bin\Debug\netcoreapp3.1\Persistencia.pdb
-D:\upcproject\github\ProjectUPC\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.csprojAssemblyReference.cache
 D:\upcproject\github\ProjectUPC\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.csproj.CoreCompileInputs.cache
 D:\upcproject\github\ProjectUPC\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.MvcApplicationPartsAssemblyInfo.cs
 D:\upcproject\github\ProjectUPC\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.MvcApplicationPartsAssemblyInfo.cache
@@ -252,7 +250,8 @@ D:\upcproject\github\ProjectUPC\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.AssemblyIn
 D:\upcproject\github\ProjectUPC\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.RazorTargetAssemblyInfo.cache
 D:\upcproject\github\ProjectUPC\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.csproj.CopyComplete
 D:\upcproject\github\ProjectUPC\WebAPI\obj\Debug\netcoreapp3.1\staticwebassets\WebAPI.StaticWebAssets.Manifest.cache
-D:\upcproject\github\ProjectUPC\WebAPI\obj\Debug\netcoreapp3.1\staticwebassets\WebAPI.StaticWebAssets.xml
 D:\upcproject\github\ProjectUPC\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.dll
 D:\upcproject\github\ProjectUPC\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.pdb
 D:\upcproject\github\ProjectUPC\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.genruntimeconfig.cache
+D:\upcproject\github\ProjectUPC\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.csproj.AssemblyReference.cache
+D:\upcproject\github\ProjectUPC\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.GeneratedMSBuildEditorConfig.editorconfig

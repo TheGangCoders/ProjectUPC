@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "4G/9ZwOE8PdEB6NiK94x3MmTu+0iwB8LWwrRerY5YD4cpJDeYuWfJanNR5XjtrjlXwrjD50wCzCKBgXK0VNFqA==",
+  "success": true,
+  "projectFilePath": "D:\\upcproject\\github\\ProjectUPC\\DataManagement\\DataManagement.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gabo9\\.nuget\\packages\\fsharp.core\\4.7.0\\fsharp.core.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

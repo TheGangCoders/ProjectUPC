@@ -9,7 +9,7 @@ namespace Persistencia
     {
         public static async Task InsertarData(AplicacionAlmacenContext context, UserManager<Usuario> usuarioManager){
              if(!usuarioManager.Users.Any()){
-                var usuario = new Usuario{NombreCompleto = "Maria Ramos", UserName="mramos", Email="mariaramos@gmail.com"};
+                var usuario = new Usuario{NombreCompleto = "Maria Ramos", UserName="mramos", Email="gabo.9218@gmail.com"};
                 await usuarioManager.CreateAsync(usuario, "ValeSofia12$");
             }
         }
