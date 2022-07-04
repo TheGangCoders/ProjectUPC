@@ -1,4 +1,5 @@
 using System;
+using System.Globalization;
 using System.Threading;
 using System.Threading.Tasks;
 using Aplicacion.Contratos;
@@ -40,7 +41,7 @@ namespace Aplicacion.UnidadesMedida
                 var unidad = new UnidadMedida{
                     UnidadMedidaId = _UnidadMedidaId,
                     Descripcion = request.Descripcion.ToUpper(),
-                    Abreviatura = request.Abreviatura.ToUpper(),
+                    Abreviatura = request.Abreviatura.ToUpper(new CultureInfo("en-US", false)),
                     Activo = true,
                     FechaCreacion = DateTime.Now,
                     UsuarioCreacion = usuario.UserName.ToUpper()
