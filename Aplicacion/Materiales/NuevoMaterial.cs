@@ -42,33 +42,46 @@ namespace Aplicacion.Materiales
             }
             public async Task<int> Handle(Execute request, CancellationToken cancellationToken)
             {
-                var usuario = await _userManager.FindByNameAsync(_usuarioSesion.ObtenerUsuarioSesion());
-                Guid _MaterialId = Guid.NewGuid();
-                var material = new Material{
-                    MaterialId = _MaterialId,
-                    Descripcion = request.Descripcion.ToUpper(),
-                    CodProveedor = request.CodProveedor.ToUpper(),
-                    GrupoMaterialesId = request.GrupoMaterialesId,
-                    UnidadMedidaId = request.UnidadMedidaId,
-                    Activo = true,
-                    FechaCreacion = DateTime.Now,
-                    UsuarioCreacion = usuario.UserName.ToUpper()
-                };
-                _context.Material.Add(material);
-                var precio = new Precio{
-                    PrecioId = Guid.NewGuid(),
-                    PrecioActual = request.PrecioActual,
-                    MaterialId = _MaterialId,
-                    Activo = true,
-                    FechaCreacion = DateTime.Now,
-                    UsuarioCreacion = usuario.UserName.ToUpper()
-                };
-                _context.Precio.Add(precio);
-                var valor = await _context.SaveChangesAsync();
-                if(valor > 0){
-                    return 1;
+                int response = 0;
+                try
+                {
+                    var usuario = await _userManager.FindByNameAsync(_usuarioSesion.ObtenerUsuarioSesion());
+                    Guid _MaterialId = Guid.NewGuid();
+                    
+                    var material = new Material
+                    {
+                        MaterialId = _MaterialId,
+                        Descripcion = request.Descripcion.ToUpper(),
+                        CodProveedor = request.CodProveedor.ToUpper(),
+                        GrupoMaterialesId = request.GrupoMaterialesId,
+                        UnidadMedidaId = request.UnidadMedidaId,
+                        Activo = true,
+                        FechaCreacion = DateTime.Now,
+                        UsuarioCreacion = usuario.UserName.ToUpper()
+                    };
+                    _context.Material.Add(material);
+                    var precio = new Precio
+                    {
+                        PrecioId = Guid.NewGuid(),
+                        PrecioActual = request.PrecioActual,
+                        MaterialId = _MaterialId,
+                        Activo = true,
+                        FechaCreacion = DateTime.Now,
+                        UsuarioCreacion = usuario.UserName.ToUpper()
+                    };
+                    _context.Precio.Add(precio);
+                    var valor = await _context.SaveChangesAsync();
+                    if (valor > 0)
+                    {
+                        response = 1;
+                    }
                 }
-                throw new InstanceNotFoundException("No se pudo insertar el Material");
+                catch (Exception e)
+                {
+                    throw new InstanceNotFoundException(e.ToString());
+                }
+                return response;
+                
             }
         }
     }
