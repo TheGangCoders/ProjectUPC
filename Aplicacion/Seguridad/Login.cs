@@ -46,7 +46,8 @@ namespace Aplicacion.Seguridad
                         Token = _jwtGenerador.CrearToken(usuario),
                         Username = usuario.UserName,
                         Email = usuario.Email,
-                        Imagen = null
+                        Imagen = null,
+                        Mensaje = "Aprendido en la UPC"
                     };
                 }
                 throw new ManejadorException(HttpStatusCode.Unauthorized);
