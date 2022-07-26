@@ -47,7 +47,7 @@ namespace Aplicacion.Seguridad
                         Username = usuario.UserName,
                         Email = usuario.Email,
                         Imagen = null,
-                        Mensaje = "Aprendido en la UPC"
+                        Mensaje = "     Programado para la UPC"
                     };
                 }
                 throw new ManejadorException(HttpStatusCode.Unauthorized);
