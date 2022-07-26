@@ -15,7 +15,8 @@ namespace Seguridad
         {
             //Seteamos el claim que es la data que se va compartir con el cliente
             var claims = new List<Claim>(){
-                new Claim(JwtRegisteredClaimNames.NameId, usuario.UserName, usuario.NombreCompleto)
+                new Claim(JwtRegisteredClaimNames.NameId, usuario.UserName, usuario.NombreCompleto),
+                new Claim(JwtRegisteredClaimNames.Sub, usuario.Email)
             };
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("Mi palabra secreta"));
             var credenciales = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
